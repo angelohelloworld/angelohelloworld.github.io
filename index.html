@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+
+
+    }
+
+    /* Style the header */
+    header {
+      background-color: rgb(187, 185, 185);
+      padding: 25px;
+      text-align: center;
+      font-size: 30px;
+      color: white;
+    }
+
+    /* Container for flexboxes */
+    section {
+      display: -webkit-flex;
+      display: flex;
+    }
+
+    /* Style the navigation menu */
+    nav {
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      background: #ccc;
+      padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    /* Style the content */
+    article {
+      -webkit-flex: 3;
+      -ms-flex: 3;
+      flex: 3;
+      background-color: #f7f3f3;
+      padding: 10px;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile-container > img {
+      width: 100%;
+    }
+
+    /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>BATANGAS STATE UNIVERSITY</h2>
+  <p>Computer Science</p>
+  <p>ABOUT ME</p>
+  <p><strong>Quotes in life</strong> “Life is what we make it, always has been, always will be.”</p>
+
+  <header>
+
+    <h2>ABOUT ME </h2>
+  </header>
+
+  <section>
+    <nav>
+      <div class="profile-container">
+        <img src="./profile.jpg" alt=""/>
+        <div>
+          <h1>Angelo Gener V. Santiago</h1>
+          <br>Biography<br>
+          <p>I was born on May 14, 2001 in Jose Occidental Mindoro</p>
+          <p>I am web developer based on Philippines. Student at Batangas state University</p>
+          <P> Elementary: Divine word college of san jose</P>
+          <p>Highschool:Divine world college of san jose</p>
+          <p>Seniorhigh: Lyceum of the Philippines University</p>
+          <p>College: Batangas state University</p>
+        </div>
+      </div>
+    </nav>
+
+    <article>
+      <h1>Technology Tool Use</h1>
+      <br>Html<br>
+      <p>C++</p>
+      <p>pyhton</p>
+      <P> CSS</P>
+      <p>Java</p>
+      <p>ruby</p>
+      <p>php</p>
+    </article>
+  </section>
+
+
+  <footer>
+    <p>LinkedIn email angelogener14@gmail.com</p>
+    <p>Github angelohelloworld</p>
+  </footer>
+
+</body>
+
+</html>
